@@ -1,0 +1,10 @@
+{
+  "slug": "placeholder-product",
+  "name": "Placeholder product",
+  "category": "kitchen",
+  "shortDescription": "A placeholder product served by the mock server.",
+  "image": "/images/placeholder.jpg",
+  "bestSeller": false,
+  "colours": ["black", "white"],
+  "specs": [{ "title": "Dimensions", "items": ["10 x 10 x 10 cm", "1 kg"] }]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "next-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n mock,next -c blue,green \"npm:mock\" \"npm:dev:next\"",
+    "dev:next": "next dev",
+    "mock": "node --watch mock-server/server.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "node --test \"src/**/*.test.ts\""
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "concurrently": "10.0.6",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "typescript": "~6.0.3"
+  }
+}

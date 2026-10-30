@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fg: #0f172a;
+  --bg: #ffffff;
+  --muted: #64748b;
+  --surface: #f1f5f9;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e2e8f0;
+    --bg: #0f172a;
+    --muted: #94a3b8;
+    --surface: #1e293b;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+}

@@ -1,0 +1,43 @@
+.main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+}
+
+/* Reserves space before the image loads, since the API sends no dimensions. */
+.media {
+  position: relative;
+  aspect-ratio: 1;
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.media img {
+  object-fit: cover;
+}
+
+.name {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}

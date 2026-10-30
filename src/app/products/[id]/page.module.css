@@ -1,0 +1,27 @@
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Reserves space before the image loads, since the API sends no dimensions. */
+.media {
+  position: relative;
+  aspect-ratio: 1;
+  margin-top: 1rem;
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.media img {
+  object-fit: cover;
+}
+
+.description {
+  color: var(--muted);
+}
+
+.specTitle {
+  font-size: 1rem;
+}
